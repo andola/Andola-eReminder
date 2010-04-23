@@ -1,0 +1,45 @@
+<div align=center>
+	<h1>User#login</h1>
+</div>
+<div>&nbsp;</div>
+<div align="center" class="custPre">
+	Please Login using your User ID and Password
+</div>
+<div>&nbsp;</div>	
+<!--creates form, exectues the authenticate method when the submit button is clicked-->
+<table border="0" cellpadding="0" cellspacing="0" width="250" align="center">
+	<%= form_tag :action=>'authenticate' %>
+	<tr>
+		<td width="70%">
+			User Name:
+		</td>
+		<td width="30%">
+			<%= text_field("userform", "user_name",:size=>"20" ) %>
+		</td>		
+	</tr>
+	<tr>
+		<td colspan=2>&nbsp;</td>
+	</tr>			
+	<tr>
+		<td>
+			Password:
+		</td>
+		<td>
+			 <%= password_field("userform", "password",:size=>"20" )%>
+		</td>	
+	</tr>
+	<tr>
+		<td colspan=2>&nbsp;</td>
+	</tr>		
+	<tr>
+		<td colspan="2" align="center">
+			<input type="submit" value=" LOGIN " /> <br/><br/>
+		</td>	
+	</tr>
+	
+	<tr>
+		<td colspan="2" align="center">
+			<%= link_to "Back", :controller => "home" %> | <%= link_to "Sign Up", :controller => "user", :action => "signup" %>
+		</td>	
+	</tr>	
+</table> 

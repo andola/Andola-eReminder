@@ -1,0 +1,20 @@
+ <div id="content-bucket">
+    	<h1 class="tac">Hello <span><%=session[:user_name]%></span></h1>
+		<h2 class="tac success"><%=flash[:notice]%></h2>
+		
+		<div id="new-reminder">		 
+		    <div style="margin:0; padding:0;">
+	              <div id="list">
+	           		<p class="succ"><span>Title:&nbsp;</span> <%=h @reminder.name %></p>
+	                <p class="succ"><span>Schedule Date:&nbsp;</span><%=h @reminder.scheduled %></p>
+	               	<p class="succ"><span>Description:&nbsp;</span> <%=h @reminder.description %>r</p>
+	             </div>
+	        </div>
+			<div id="last">
+				<label class="h50">&nbsp;</label>			  	
+				<span><%= link_to 'Edit Reminder', edit_reminder_path(@reminder), :id => "btn" %></span>&nbsp;&nbsp;|&nbsp;&nbsp;<span><%= link_to 'My Reminders', {:controller => "reminder"}, :id => "btn" %></span>
+			</div>
+		</div>	
+	
+      <div id="clearfix" class="pb50"></div>
+	</div>

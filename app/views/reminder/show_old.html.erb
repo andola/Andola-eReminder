@@ -1,0 +1,19 @@
+Hello <strong><%=session[:user_name]%></strong>.
+<p>
+  <b>Title:</b>
+  <%=h @reminder.name %>
+</p>
+
+<p>
+  <b>Schedule Date:</b>
+  <%=h @reminder.scheduled %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @reminder.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_reminder_path(@reminder) %> |
+<%= link_to 'Back', :controller => "reminder" %>

@@ -1,0 +1,58 @@
+		
+    <div id="content-bucket">
+    <div id="left-col">
+		<h1 class="bodytext main-p m0"><span class="highlite">Absolutely FREE!</span> A fast &amp; easy-to-use with built-in configurator to setup anything you could forget.</h1>
+		<ul id="hlite" class="bodytext">
+			<li><span class="heading">Lorem ipsum dolor sit amet, consectetuer</span><br />
+				<span class="fs14">Tired of forgetting birthdays, anniversaries & events/occasions?</span>			</li>
+			<li><span class="heading">Ut wisi enim ad minim veniam, quis nostrud</span><br />
+				<span class="fs14">How do you remember bill payment dates?</span>			</li>
+			<li><span class="heading">Duis autem vel eum iriure dolor in hendrerit in</span><br />
+				<span class="fs14">Here you go, set eReminder forget all these dates for once & all!</span>			</li>
+			<li><span class="heading">Duis autem vel eum iriure dolor in hendrerit in</span><br />
+				<span class="fs14">Sign Up & keep getting reminders throughout!</span>			</li>
+	  	</ul>
+		<%= image_tag("screen_shot.jpg", :alt => "AndolaSoft eReminder", :width => "555", :height => "234") %>
+		</div>
+		
+    <div id="right-col">
+		<!--<form action="user/login" method="post" id="signin" class="bodytext">-->
+		<% form_for :userform, @userform, :url => {:controller => 'user', :action => "authenticate" }, :html => {:id => "signin", :class => "bodytext"} do |f| %>
+			
+			<div>
+				<p style="color: #008000; font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center;"><%= flash[:notice] %></p>
+				<p style="color: #FD6818; font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center;"><%= flash[:error] %></p>
+			</div>			 	
+			
+			<div class="mt-14">
+				<label for="uname">Username</label>
+				<%= f.text_field :user_name %>
+			</div>
+			<div>
+				<label for="email">Password	</label>
+				<%= f.password_field :password %>
+			</div>
+			<div class="pb20">
+				<label>&nbsp;</label>
+				<input name="submit" type="submit" class="button" value="Sign in" />
+				<%#= submit_tag "Sign in", :controller => "user", :action => "login", :class => "button" %> 
+	      	</div>
+	 	<% end %> 
+	 	<% form_for :userform, @userform, :url => {:controller => 'user', :action => "signup" }, :html => {:id => "signin", :class => "bodytext"} do |f| %> 
+		  	<h1 id="signup">Don't have an Account?</h1>
+			<!--<input name="submit" type="submit" class="signup" value="Free Sign up Now"/>-->
+			<%#= link_to "Free Sign up Now", :controller => "user", :action => "signup" %>
+			<%= submit_tag "Free Sign up Now", :controller => "user", :action => "signup", :class => "signup" %>
+			<div id="clearfix"></div>			  
+	  	<!--</form>-->
+		<% end %>		
+	  	
+		<div id="divide"></div>
+	  
+	  	<p id="testimonial">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+		<p class="fs14" id="testimoni-name">- Dolor Sit Amet</p>
+	</div>
+	
+    <div id="clearfix"></div>
+	</div>
+	

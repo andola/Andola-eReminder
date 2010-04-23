@@ -1,0 +1,38 @@
+<%= javascript_include_tag :defaults %> 
+<%= calendar_date_select_includes %>
+		
+    <div id="content-bucket">	
+		<h1 class="tac">Hello <span><%=session[:user_name]%></span></h1>
+			
+		  <% form_for :reminder, @reminder, :url => {:controller => 'reminder', :action => 'create'}, :html => {:id => "new-reminder"} do |r| %>
+	      		
+				<div>
+					<%= error_messages_for :reminder %>
+				</div>	
+				
+				<div>
+	            	<label for="uname">Title</label>
+	            	<%= r.text_field :name %>
+	           	</div>
+		    	<div>		    		
+	            	<label for="uname">Select Date  </label>
+					<% fields_for :reminder do |rem| %>		            	
+						<%= rem.calendar_date_select :scheduled, :valid_date_check => "date.stripTime() > (new Date()).stripTime()", :year_range => [0.years.ago, 10.years.from_now]%>
+					<% end %>
+				</div>
+		    	<div>
+	            	<label for="email">Description</label>
+			  		<%= r.text_area :description, :size => "40x6"%>
+			  	</div>
+			  <div>
+			    <label>&nbsp;</label>
+			    <input name="submit" type="submit" class="button" value="Create" />
+	          </div>
+		    <div id="last">
+		    	<label class="h50">&nbsp;</label>			  	
+				<%= link_to 'My Reminders', {:controller => "reminder"}, :id => "btn" %>
+			</div>
+		  <% end %>
+		  	
+    	<div id="clearfix" class="pb50"></div>
+	</div>

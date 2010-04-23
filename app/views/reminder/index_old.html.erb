@@ -1,0 +1,31 @@
+Hello <strong><%=session[:user_name]%></strong>.
+<h1>Listing eReminders</h1>
+<table>
+  <tr>
+    <th>Title</th>
+	<th>&nbsp;&nbsp;</th>
+	<th>Scheduled Date</th>
+    <th>&nbsp;&nbsp;</th>
+	<th>Description</th>
+  </tr>
+
+<% @reminder.each do |r| %>
+  <tr>
+    <td><%=h r.name %></td>
+	<td>&nbsp;&nbsp;</td>
+    <td><%=h r.scheduled %></td>
+	<td>&nbsp;&nbsp;</td>
+	<td><%=h r.description %></td>
+	<td>&nbsp;&nbsp;</td>
+    <td><%= link_to 'Show', r %></td>
+	<td>&nbsp;</td>
+    <td><%= link_to 'Edit', edit_reminder_path(r) %></td>
+	<td>&nbsp;</td>
+    <td><%= link_to 'Destroy', r, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= link_to 'New Reminder', new_reminder_path %> | <%= link_to "Back", :controller => "user", :action => "private" %>
+

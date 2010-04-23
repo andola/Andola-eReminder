@@ -1,0 +1,25 @@
+Hello <strong><%=session[:user_name]%></strong>.
+<h1>Editing Reminder</h1>
+
+<% form_for(@reminder) do |r| %>
+  <%= r.error_messages %>
+
+  <p>
+    <%= r.label :title %><br />
+    <%= r.text_field :name %>
+  </p>
+    <p>
+    <%= r.label :schedule %><br />
+    <%= r.text_field :scheduled %>
+  </p>
+  <p>
+    <%= r.label :description %><br />
+    <%= r.text_area :description, :size => "40x6" %>
+  </p>
+  <p>
+    <%= r.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @reminder %> |
+<%= link_to 'Back', :controller => "reminder" %>
