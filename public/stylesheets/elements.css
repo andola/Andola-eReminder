@@ -1,0 +1,292 @@
+#container{
+	margin:0 auto 88px auto;
+	padding:0;
+	width:100%;
+	background:#fff url(../images/header_bg.jpg) center top repeat-x;
+	position:relative;
+	clear:both;
+/*	height:85%;
+*/}
+
+#content-body{
+	padding:0 35px;
+	margin:0;
+}
+#header{
+	height:100px;
+	width:auto;
+	background: url(../images/header_bg.jpg) center top repeat-x;
+	padding:0;
+	margin:0 auto;
+	position:relative;
+}
+#logo{
+	width:418px;
+	height:64px;
+	padding:0;
+	margin:0;
+	position:relative;
+	float:left;
+	background: url(../images/logo.jpg) left top no-repeat;
+}
+#logo a{
+	width:320px;
+	height:24px;
+	padding:0;
+	margin:0;
+	top:17px;
+	left:99px;
+	position:absolute;
+	display:block;
+}
+#button-bucket{
+	width:180px;
+	height:60px;
+	padding:4px 25px 0 0;
+	margin:0;
+	float:right;
+	position:relative;
+	text-align:right;
+}
+#button{
+	padding:8px 0 0 0;
+	margin:0;
+	font:16px Arial, Helvetica, sans-serif;
+	color:#71308d;
+}
+#button a, #button a:active, #button a:visited{
+	text-decoration: none;
+	cursor: pointer;
+	padding:0 6px;
+	color:#71308d;
+}
+#button a:hover{
+	text-decoration:underline;
+}
+
+#left-col{
+	padding:0px 36px 20px 45px;
+	width:566px;
+	float:left;
+	background:#FFF url(../images/divider.jpg) right top no-repeat;
+}
+#right-col{
+	padding:0 34px;
+	float:left;
+	width:217px;
+}
+
+
+#signin { 
+	position: relative;
+	padding:0 0 20px 0;
+	margin:0 auto;
+	clear:both;
+	/*background:url(../images/divider.jpg) center bottom no-repeat;*/
+	}
+#signin div  {
+	padding:8px 0;
+	float:left;
+	width:217px;
+	}
+#signin label  {
+	margin:0px;
+	padding-right: 10px; 
+	width: 76px; 
+	display: block; 
+	float: left; 
+	text-align: left; 
+	font:12px Arial, Helvetica, sans-serif;
+	color:#000; 
+}
+#signin input{
+	width: 120px;
+	height:17px;
+}
+
+#signin input.button{
+	background:#3f7105 url(../images/btn_bg2.jpg) left top repeat-x;
+	height: 30px;
+	padding:0 5px 3px 5px;
+	width:68px;
+	border:none;
+	color:#FFFFFF;
+	font:bold 13px Arial, Helvetica, sans-serif;
+	cursor:pointer;
+	}
+#signin input.signup{
+	background:#3f7105 url(../images/btn_bg2.jpg) left top repeat-x;
+	height: 30px;
+	padding:0 5px 3px 5px;
+	width:138px;
+	border:none;
+	color:#FFFFFF;
+	font:bold 13px Arial, Helvetica, sans-serif;
+	cursor:pointer;
+	margin:0 0 0 42px;
+	}
+#content-bucket{
+	width:1000px;
+	padding:0;
+	margin:0 auto;
+	position:relative;
+}
+/*********** FOOTER *************/
+#footer-container{
+	width:100%;
+	height:36px;
+	padding:26px 0;
+	background:#fff url(../images/footer_divider.jpg) center top repeat-x;
+	position:absolute;
+	position:fixed;
+	bottom:0px;
+}
+#footer{
+	width:894px;
+	height:36px;
+	padding:0;
+	margin:0 auto;
+	position:relative;
+}
+#powered{
+	width:222px;
+	height:30px;
+	padding:6px 0 0 0px;
+	margin:0;
+	float:right;
+	position:relative;
+}
+#footer-nav{
+	width:351px;
+	height:30px;
+	padding:28px 0 0 0;
+	margin:0;
+	float:left;
+	position:relative;
+	text-align:center;
+	background:url(../images/ereminder_footer_logo.jpg) center top no-repeat;
+}
+#footer-nav a, #footer-nav a:visited, #footer-nav a:active{
+	text-decoration: none;
+	color:#000;
+	cursor: pointer;
+	padding:0 6px;
+
+}
+#footer-nav a:hover{
+	text-decoration: underline;
+	color:#fd6818;
+}
+.copy{
+	font-size:11px;
+	padding:8px 0 0 0;
+	display:block;
+}
+/*#socialnetwork{
+	width:140px;
+	height:30px;
+	padding:0 0 0 100px;
+	margin:0;
+	float: left;
+	position:relative;
+	background:url(../images/follow_us.jpg) left 50% no-repeat;
+}*/
+#socialnetwork{
+	width:130px;
+	height:30px;
+	padding:0 0 0 100px;
+	margin:0;
+	float: left;
+	position:relative;
+	background:url(../images/follow_us.jpg) left 10px no-repeat;
+}
+
+#socialnetwork a, a.rss{
+	width:37px;
+	height:36px;
+	padding:0;
+	margin:0;
+	float: left;
+	position:relative;
+	background-position:right;
+}
+#socialnetwork a:hover, a.rss:hover{
+	background-position:left;
+}
+a.rss{
+	background-image:url(../images/rss.jpg);
+	margin-right:20px;
+}
+#socialnetwork a.twitter{
+	background-image:url(../images/twitter.jpg);
+	margin-left:8px;
+}
+#socialnetwork a.facebook{
+	background-image:url(../images/facebook.jpg);
+	margin-left:8px;
+}
+
+/******* MISC *****************/
+#hlite{
+	margin:0 0 15px 0;
+	padding:0;
+	list-style:none;
+}
+#hlite li{
+	display:block;
+	margin:15px 0 0 0;
+	padding:0;
+	list-style:none;
+	padding-left:20px;
+	background:url(../images/bullet.jpg) left 8px no-repeat;
+}
+#testimonial{
+	background: url(../images/quote1.jpg) left 28px no-repeat;
+	padding:50px 0 0 0;
+	font-size:1.2em;
+	line-height:1.4em;
+	font-style: italic;
+}
+#testimoni-name{
+	background: url(../images/quote2.jpg) right top no-repeat;
+	padding:0px 0 35px 0;
+	color:#6c972b!important;
+	font-size:1.3em;
+	font-style: italic;
+
+}
+
+div#divide{
+	height:1px;
+	overflow:hidden!important;
+	float:none;
+	margin:10px 0;
+	clear:both;
+	background:#e0e0e0;
+}
+table#reminderlist{
+	margin:10px 0;
+	padding:0;
+}
+
+table#reminderlist th, table#reminderlist td{
+	padding:7px 10px;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	border:2px solid #fff;
+	border-width:0 0 2px 2px;
+}
+table#reminderlist th{
+	background:#f4f8ec;
+}
+table#reminderlist td{
+	font-weight:normal!important;
+	background:#f8f8f8;
+}
+table#reminderlist a, table#reminderlist a:active, table#reminderlist a:visited{
+	color:#48790d;
+	text-decoration: none;
+}
+table#reminderlist a:hover{
+	color:#ff7800;
+	text-decoration: underline;
+}

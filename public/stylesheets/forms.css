@@ -1,0 +1,117 @@
+/*************************  REGISTRATION *****************************/
+#registration { 
+	position: relative;
+	padding:15px;
+	margin:0 auto;
+	width:385px;
+	font:13px Arial, Helvetica, sans-serif;
+	color:#4d4d4d;
+}
+#registration div  {
+	padding:6px 0;
+	float:left;
+	width:385px;
+	}
+#registration div div#captcha {
+	padding:0;
+	float:left;
+	width:200px;
+	}
+#registration label  {
+	margin:0px;
+	padding-right: 10px;
+	width: 120px; 
+	display: block; 
+	float: left; 
+	text-align: right; 
+	position: relative;
+	padding-top:5px;
+}
+#registration input  {
+	width: 195px;
+	height:17px; 
+	float: left;
+}
+#registration input.button{
+	background:#3f7105 url(../images/btn_bg2.jpg) left top repeat-x;
+	height: 30px;
+	padding:0 5px 3px 5px;
+	width:68px;
+	border:none;
+	color:#FFFFFF;
+	font:bold 13px Arial, Helvetica, sans-serif;
+	cursor:pointer;
+	}
+/*************************  NEW REMINDER *****************************/
+#new-reminder { 
+	position: relative;
+	padding:15px;
+	margin:0 auto;
+	width:385px;
+	font:13px Arial, Helvetica, sans-serif;
+	color:#4d4d4d;
+}
+#new-reminder div  {
+	padding:6px 0;
+	float:left;
+	width:385px;
+	}
+#new-reminder div#list{
+	width:250;
+	padding:0 0 0 130px;
+	margin:0;
+	}
+#new-reminder div#list p.problems{
+	display:block;
+	background:url(../images/bullet2.jpg) left 4px no-repeat;
+	padding:0 0 0 10px;
+	width:244px;
+	margin:3px 0;
+}
+#new-reminder div#list p.succ{
+	display:block;
+	padding:0;
+	width:254px;
+	margin:8px 0;
+}
+#new-reminder div#list p.succ span{
+	font-weight:bold;
+	}
+#new-reminder label  {
+	margin:0px;
+	padding-right: 10px;
+	width: 120px; 
+	display: block; 
+	float: left; 
+	text-align: right; 
+	position: relative;
+	padding-top:5px;
+}
+#new-reminder input  {
+	width: 195px;
+	height:17px; 
+	float: left;
+}
+.error  {
+	border:1px solid #f00;
+}
+#new-reminder textarea  {
+	width: 195px;
+	height:75px; 
+	float: left;
+	font:12px Arial, Helvetica, sans-serif;
+	letter-spacing:0.1em;
+}
+#new-reminder input.button{
+	background:#3f7105 url(../images/btn_bg2.jpg) left top repeat-x;
+	height: 30px;
+	padding:0 5px 3px 5px;
+	width:68px;
+	border:none;
+	color:#FFFFFF;
+	font:bold 13px Arial, Helvetica, sans-serif;
+	cursor:pointer;
+	}
+span.list-des{
+	display:block;
+	}

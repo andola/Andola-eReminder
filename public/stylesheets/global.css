@@ -1,0 +1,141 @@
+html{
+	overflow:-moz-scrollbars-vertical;
+}
+body{
+	background:#FFF;
+	margin:0;
+	padding:0;
+	font:12px Arial, Helvetica, sans-serif;
+}
+a{
+	outline:none;
+}
+a#btn{
+	color:#ff7800;
+	font:bold 13px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+a#btn:hover{
+	text-decoration: underline;
+}
+p{
+	margin:10px 0 0 0;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#333;
+	}
+p a, p a:visited, p a:active{
+	color:#333;
+	text-decoration:none;
+	}
+p a:hover{
+	color:#F00;
+	text-decoration:underline;
+	}
+h1{
+	font:18px Arial, Helvetica, sans-serif;
+	color:#000;
+	margin:0 0 5px 0;
+	}
+h1 span{
+	color:#3f7105;
+	font-weight:bold;
+	}
+h1#signup{
+	display:block;
+	background:url(../images/divider.jpg) center top no-repeat;
+	text-align:center; 
+	clear:both; 
+	padding:10px 0 10px 0;
+	margin:0;
+	border-top:1px solid #e0e0e0;
+	}
+h2{
+	font:16px Arial, Helvetica, sans-serif;
+	color:#ff7800;
+	margin:0 0 5px 0;
+}
+h2.error{
+	color:#f00;
+	border:none;
+	}
+h2.success{
+	color: green;
+	border:none;
+	}
+.bodytext{
+	font:12px Arial, Helvetica, sans-serif;
+	color:#000;
+	}
+.bodytext{
+	font:13px Arial, Helvetica, sans-serif;
+	color:#535353;
+	margin:0;
+	list-style:square;
+}
+.bodytext a, .bodytext a:visited, .bodytext a:active{
+	font:13px Arial, Helvetica, sans-serif;
+	color:#535353;
+	text-decoration:none;
+}
+.bodytext a:hover{
+	color: #ff6600;
+	text-decoration:underline;
+}
+
+/************* MISC *************************/
+
+#clearfix{
+	margin:0;
+	padding:0;
+	clear:both;
+	height:1px;
+	overflow:hidden;
+	display:block;
+}
+.highlite{
+	color:#3f7206;
+	font-weight:normal!important;
+}
+
+
+
+.fs14{
+	font-size:1.1em!important;
+	letter-spacing:1px;
+}
+.main-p{
+	font-size:1.5em!important;
+	color:#000;
+}
+.fs20{
+	font-size:20px!important;
+	letter-spacing:1px;
+}
+
+.m0{
+	margin:0!important;
+}
+.ml5{
+	margin-left:5px!important;
+}
+.ml9{
+	margin-left:9px!important;
+}
+.pb20{
+	padding-bottom:20px!important;
+}
+
+
+.tac{
+	text-align:center!important;
+}
+.pb50{
+	padding-bottom:50px!important;
+}
+.h150{
+	height:150px!important;
+}
+span.heading{
+	font-size:1.6em!important;
+	color:#000;
+}
